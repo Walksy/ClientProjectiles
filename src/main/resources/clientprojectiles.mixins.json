@@ -1,0 +1,25 @@
+{
+	"required": true,
+	"package": "walksy.clientprojectiles.mixin",
+	"compatibilityLevel": "JAVA_${java_version}",
+	"client": [
+		"BowItemMixin",
+		"CrossbowItemMixin",
+		"EnderPearlItemMixin",
+		"ExperienceBottleItemMixin",
+		"ThrowablePotionItemMixin",
+		"WindChargeItemMixin",
+		"ClientConnectionMixin",
+		"EnderPearlEntityMixin",
+		"AbstractWindChargeEntityMixin",
+		"ExperienceBottleEntityMixin",
+		"PotionEntityMixin",
+		"PersistentProjectileEntityMixin",
+		"PersistentProjectileEntityAccessor",
+		"MoveEntityPacketAccessor",
+		"ServerProjectileSyncMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

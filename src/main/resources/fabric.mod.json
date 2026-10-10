@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "clientprojectiles",
+	"version": "${version}",
+	"name": "Client Projectiles",
+	"description": "Handles your projectiles client-side",
+	"authors": [
+		"Walksy"
+	],
+	"contact": {
+		"issues": "https://github.com/Walksy/ClientProjectiles/issues",
+		"sources": "https://github.com/Walksy/ClientProjectiles",
+		"homepage": "https://discord.com/invite/zeu7uNuBWY"
+	},
+	"license": "MIT",
+	"icon": "assets/walksy/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"walksy.clientprojectiles.ClientProjectiles"
+		],
+		"walksylib": [
+			"walksy.clientprojectiles.config.ClientProjectilesConfig"
+		]
+	},
+	"mixins": [
+      "clientprojectiles.mixins.json"
+	],
+	"depends": {
+		"minecraft": "${minecraft_dependency}",
+		"java": ">=${java_version}",
+		"fabric-api": "*",
+		"walksylib": ">=2.0.1"
+	}
+}
